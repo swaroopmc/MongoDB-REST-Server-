@@ -21,4 +21,5 @@ DATA OBJECTS:
 
 HTTP Requests: http://localhost:8080/cmpe282swaroop121/rest/project/
                http://localhost:8080/cmpe282swaroop121/rest/employee/
+               
                HTTP Methods: POST, GET, PUT and DELETE
