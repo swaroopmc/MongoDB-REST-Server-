@@ -4,7 +4,11 @@
 Theme: Java-based REST server + NoSQL
 
 REST Server components: JAS-RS, Jersey, Apache Tomcat Server v8 
+
+
 REST Server: NOSQL Component: MongoDB 
+
+
 Java Driver: mongo-java-driver 2.10.1
 
 DATA OBJECTS: 
