@@ -12,12 +12,14 @@ REST Server: NOSQL Component: MongoDB
 Java Driver: mongo-java-driver 2.10.1
 
 DATA OBJECTS: 
- Employee 
+ Employee:  
+ 
          int id;
          String firstName;
          String lastName;
 
- Project 
+ Project: 
+ 
           int id;
           String name;
           float budget;
