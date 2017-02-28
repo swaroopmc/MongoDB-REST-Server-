@@ -1,7 +1,7 @@
-# MongoDB-REST-Server-
+# MongoDB-REST-Server
 
 
-Theme: Java-based REST server + NoSQL
+Theme: Simple-Java-based REST server + NoSQL, for CMPE 282 Assigment1
 
 REST Server components: JAS-RS, Jersey, Apache Tomcat Server v8 
 
