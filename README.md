@@ -1,7 +1,7 @@
 # MongoDB-REST-Server
 
 
-Theme: Simple-Java-based REST server + NoSQL, for CMPE 282 Assigment1
+Theme: Simple-Java-based REST server + NoSQL
 
 REST Server components: JAS-RS, Jersey, Apache Tomcat Server v8 
 
@@ -25,7 +25,7 @@ DATA OBJECTS:
           float budget;
 
 
-HTTP Requests: http://localhost:8080/cmpe282swaroop121/rest/project/
-               http://localhost:8080/cmpe282swaroop121/rest/employee/
+HTTP Requests: http://localhost:8080/mongojavarest/rest/project/
+               http://localhost:8080/mongojavarest/rest/employee/
                
                HTTP Methods: POST, GET, PUT and DELETE
