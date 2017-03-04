@@ -1,4 +1,4 @@
-package cmpe282swaroop121.client;
+package mongojavarest.client;
 
 
 import javax.xml.bind.annotation.XmlRootElement;
