@@ -1,4 +1,4 @@
-package cmpe282swaroop121.server;
+package mongojavarest.server;
 
 
 
@@ -22,8 +22,8 @@ import javax.ws.rs.core.Response.StatusType;
 import org.bson.BSON;
 import org.codehaus.jettison.json.JSONObject;
 
-import cmpe282swaroop121.client.Employee;
-import cmpe282swaroop121.client.Project;
+import mongojavarest.client.Employee;
+import mongojavarest.client.Project;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.BasicDBObjectBuilder;
@@ -49,7 +49,7 @@ public class Server {
 		whereQuery.put("id", id);
 		BasicDBObject dbo = new BasicDBObject();
 		MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
-		DB db  = mongoClient.getDB("cmpe282swaroop121");					
+		DB db  = mongoClient.getDB("mongojavarest");					
 		DBCollection col = db.getCollection("employee");	
 		dbo = (BasicDBObject)col.findOne(whereQuery);	
 		if(dbo !=null){
@@ -98,7 +98,7 @@ public class Server {
 			MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 			try
 			{							
-				DB db  = mongoClient.getDB("cmpe282swaroop121");					
+				DB db  = mongoClient.getDB("mongojavarest");					
 				
 					DBCollection col = db.getCollection("employee");				
 					
@@ -141,7 +141,7 @@ public class Server {
 		MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 			try
 			{							
-			DB db  = mongoClient.getDB("cmpe282swaroop121");					
+			DB db  = mongoClient.getDB("mongojavarest");					
 				
 				DBCollection col = db.getCollection("employee");	
 				DBCursor cursor = col.find();
@@ -205,7 +205,7 @@ public class Server {
 			MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 			try
 			{							
-				DB db  = mongoClient.getDB("cmpe282swaroop121");					
+				DB db  = mongoClient.getDB("mongojavarest");					
 				
 					DBCollection col = db.getCollection("employee");				
 					
@@ -253,7 +253,7 @@ public class Server {
 			MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 			try
 			{							
-				DB db  = mongoClient.getDB("cmpe282swaroop121");					
+				DB db  = mongoClient.getDB("mongojavarest");					
 				
 					DBCollection col = db.getCollection("employee");														
 					
@@ -312,7 +312,7 @@ public class Server {
 			MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 			try
 			{							
-				DB db  = mongoClient.getDB("cmpe282swaroop121");					
+				DB db  = mongoClient.getDB("mongojavarest");					
 					
 					DBCollection col = db.getCollection("project");
 					dbo = (BasicDBObject)col.findOne(whereQuery);	
@@ -361,7 +361,7 @@ public class Server {
 				MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 				try
 				{							
-					DB db  = mongoClient.getDB("cmpe282swaroop121");					
+					DB db  = mongoClient.getDB("mongojavarest");					
 					
 						DBCollection col = db.getCollection("project");				
 						
@@ -402,7 +402,7 @@ public class Server {
 			MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 				try
 				{							
-				DB db  = mongoClient.getDB("cmpe282swaroop121");					
+				DB db  = mongoClient.getDB("mongojavarest");					
 					
 					DBCollection col = db.getCollection("project");	
 					DBCursor cursor = col.find();
@@ -459,7 +459,7 @@ public class Server {
 				MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 				try
 				{							
-					DB db  = mongoClient.getDB("cmpe282swaroop121");					
+					DB db  = mongoClient.getDB("mongojavarest");					
 					
 						DBCollection col = db.getCollection("project");				
 						
@@ -503,7 +503,7 @@ public class Server {
 				MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
 				try
 				{							
-					DB db  = mongoClient.getDB("cmpe282swaroop121");					
+					DB db  = mongoClient.getDB("mongojavarest");					
 					
 						DBCollection col = db.getCollection("project");
 						dbo1 = (BasicDBObject)col.findOne(whereQuery);	
